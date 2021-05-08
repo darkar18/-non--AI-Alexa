@@ -54,7 +54,7 @@ def run_alexa():
             print('listening...')
             voice = listener.listen(source)
             mess = listener.recognize_google(voice)
-            pywhatkit.sendwhatmsg('+917561028752',mess,12,2)
+            pywhatkit.sendwhatmsg('your number',mess,12,2)
     elif 'date' in command:
         date = datetime.date.today()
         talk(date)
